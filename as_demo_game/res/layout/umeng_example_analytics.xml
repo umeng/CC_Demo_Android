@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bgj">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_signinDefalut"
+                android:onClick="onButtonClick"
+                android:text="signinDefalut"/>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_signin"
+                android:onClick="onButtonClick"
+                android:text="signin"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/umeng_example_analytics_signoff"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:onClick="onButtonClick"
+            android:text="@string/signoff"/>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_event"
+                android:onClick="onButtonClick"
+                android:text="@string/normal_event"/>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_ekv"
+                android:onClick="onButtonClick"
+                android:text="@string/kv_event"/>
+
+        </TableRow>
+
+
+
+
+
+
+    </TableLayout>
+
+</ScrollView>

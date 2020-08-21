@@ -1,0 +1,2 @@
+include ':as_demo_game'
+rootProject.name='CC_Demo'

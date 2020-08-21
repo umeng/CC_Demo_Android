@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="请在此输入key值"/>
+
+    <Button
+        android:id="@+id/normal_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="普通获取value值"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/siman_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="获取siman_test值"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/valueText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
