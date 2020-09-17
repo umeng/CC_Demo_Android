@@ -25,7 +25,7 @@ public class UmengApplication extends Application {
 
         //云配置手动更新代码逻辑
         UMRemoteConfig.getInstance().setConfigSettings(new RemoteConfigSettings.Builder().setAutoUpdateModeEnabled(false).build());
-        //UMRemoteConfig.getInstance().setDefaults(R.xml.cloud_config_parms);
+        UMRemoteConfig.getInstance().setDefaults(R.xml.cloud_config_parms);
         UMRemoteConfig.getInstance().setOnNewConfigfecthed(new OnConfigStatusChangedListener() {
             @Override
             public void onFetchComplete() {
@@ -42,5 +42,8 @@ public class UmengApplication extends Application {
 
         UMConfigure.init(this, "5ef2cdf5978eea088379c950", "Umeng", UMConfigure.DEVICE_TYPE_PHONE, null);
 
+        // 本地默认值获取例子。
+        String defaultParamValue = UMRemoteConfig.getInstance().getConfigValue("some_text");
+        Log.i("UMENG_CC", "default value of key some_text is: " + defaultParamValue);
     }
 }
