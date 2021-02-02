@@ -34,7 +34,7 @@ public class UmengApplication extends Application {
 
             @Override
             public void onActiveComplete() {
-                String value = UMRemoteConfig.getInstance().getConfigValue("yujietest");
+                String value = UMRemoteConfig.getInstance().getConfigValue("test_args");
                 Log.i("UMENG_CC", "value = " + value);
             }
         });
