@@ -71,10 +71,11 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     //implementation 'com.android.support:support-v4:25.0.0'
     //implementation 'com.android.support:appcompat-v7:25.0.0'
-    implementation files('libs/umeng-common-9.4.5.jar')
-    implementation(name: 'umeng-abtest-v1.0.1', ext: 'aar')
-    implementation(name: 'umeng-asms-armeabi-v1.5.0', ext: 'aar')
-    implementation(name: 'umeng-apm-armeabi-v1.5.2', ext: 'aar')
+    implementation  'com.umeng.umsdk:common:9.5.1'
+    implementation 'com.umeng.umsdk:abtest:1.0.1'
+    implementation  'com.umeng.umsdk:asms:1.6.3'
+    implementation 'com.umeng.umsdk:apm:1.7.0'
+
 
 
     // 混淆后包依赖
