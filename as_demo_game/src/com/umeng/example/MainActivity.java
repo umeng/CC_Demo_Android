@@ -48,13 +48,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         mContext = this;
 
-        if (!getRequireFlag()) {
-            if (Build.VERSION.SDK_INT >= 23) {
-                String[] mPermissionList = new String[]{
-                        Manifest.permission.READ_PHONE_STATE};
-                this.requestPermissions(mPermissionList, 123);
-            }
-        }
     }
 
     @Override
